@@ -1,0 +1,33 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main(){
+    int n; 
+    scanf("%d",&n);
+    int arr;
+    float p, neg, z;
+
+    int i;
+    int positive = 0;
+    int negative = 0;   
+    int zero = 0;
+    for(i = 0; i < n; i++){
+       scanf("%d",&arr);
+        if (arr > 0)
+            positive++;
+        else if (arr < 0)
+            negative++;
+        else 
+            zero++;
+    }
+    p = (float)positive/n;
+    neg = (float)negative/n;
+    z = (float)zero/n;
+    printf("%0.6f\n%0.6f\n%0.6f",p,neg,z);
+    return 0;
+}
