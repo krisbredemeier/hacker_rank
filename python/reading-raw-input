@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+string = raw_input()
+size = len(string)
+if ( (size >= 1) & (size <= 500 ) ):
+    print(string)
