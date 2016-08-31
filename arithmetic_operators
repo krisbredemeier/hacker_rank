@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+sa = input()
+sb = input()
+
+print(sa + sb)
+print(sa - sb)
+print(sa * sb)
